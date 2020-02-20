@@ -1,26 +1,34 @@
 package View;
 
+import Controller.ControllerMenu;
 import Tools.Path;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 public class ViewMainMenu {
-    private ViewHandler vhMenu;
+    private ViewHandler vMenu;
     private Button btnStart, btnQuit;
     private Group root;
     private Text screenText, screenTextBack;
     private Font fontScreenText, fontScreenTextBack;
+    private ImageView iconMenu;
 
-    ViewMainMenu(ViewHandler vhMenu, Group root){
-        this.vhMenu = vhMenu;
+    ViewMainMenu(ViewHandler vMenu, Group root){
+        this.vMenu = vMenu;
         this.root = root;
 
         // initialisation des boutons
         btnStart = initButton(150, 420, "Start");
         btnQuit = initButton(750,420,"Quit");
+
+        // initialisation de l'image du menu
+//        iconMenu = new ImageView(Path.IconMenu);
+//        iconMenu.setX(300);
+//        iconMenu.setY(100);
 
         initTitle();
         initView();
@@ -32,6 +40,7 @@ public class ViewMainMenu {
         root.getChildren().add(btnQuit);
         root.getChildren().add(screenTextBack);
         root.getChildren().add(screenText);
+        //root.getChildren().add(iconMenu);
     }
 
     private Button initButton(int width, int height, String BtnTxt) {
@@ -65,6 +74,11 @@ public class ViewMainMenu {
         fontScreenText = Font.loadFont(getClass().getResourceAsStream(Path.monsterFriendFore), 60);
         screenText.setFont(fontScreenText);
         screenText.setFill(Color.WHITE);
+    }
+
+    public void setEvents(ControllerMenu cm) {
+        btnStart.setOnMouseClicked(cm);
+        btnQuit.setOnMouseClicked(cm);
     }
 
     public Button getBtnStart() {

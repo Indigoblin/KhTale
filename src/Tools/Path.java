@@ -7,6 +7,9 @@ public class Path {
     public static final String monsterFriendFore = "../Asset/Fonts/MonsterFriendFore.otf";
     public static final String monsterFriendBack = "../Asset/Fonts/MonsterFriendBack.otf";
 
+    // Icon
+    public static final String IconMenu = "Asset/Pictures/Icons/khTale.png";
+
     // Sprite personnage non-jouable
     public static final String doggo = "Asset/Pictures/NPC/DoggoPet.gif";
 
