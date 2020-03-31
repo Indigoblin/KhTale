@@ -1,0 +1,14 @@
+/* css menu*/
+
+.btnMenu {
+    -fx-background-color: transparent;
+}
+.btnMenu:hover {
+    -fx-text-fill: Yellow;
+    -fx-background-color: #e4d4a0;
+}
+
+.imgBoss {
+    -fx-border-color:white;
+    -fx-border-width: 10;
+}

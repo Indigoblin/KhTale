@@ -8,22 +8,26 @@ public class Path {
     public static final String monsterFriendBack = "../Asset/Fonts/MonsterFriendBack.otf";
 
     // Icon
-    public static final String IconMenu = "Asset/Pictures/Icons/khTale.png";
+    public static final String iconSplatoonLv = "Asset/Pictures/Icons/levelSplatBW.gif";
+    public static final String iconSplatoonH = "Asset/Pictures/Icons/levelsplat.gif";
 
     // Sprite personnage non-jouable
-    public static final String doggo = "Asset/Pictures/NPC/DoggoPet.gif";
+    public static final String marie = "Asset/Pictures/NPC/marie.gif";
+    public static final String callie = "Asset/Pictures/NPC/callie.gif";
+
+    // Sprite attaque du NPC
+    public static final String normalAtkSplat = "Asset/Pictures/NPC/normalSong.png";
+    public static final String healAtkSplat = "Asset/Pictures/NPC/healSong.png";
+    public static final String ketchupAtkSplat = "Asset/Pictures/NPC/ketchupSong.png";
 
     // Sprite joueur
+    // joueur 20 pv
     public static final String joueurFullHealth = "Asset/Pictures/PC/Human_SOUL.png";
-    // joueur 20 pv damage taken
     // joueur 15 pv
-    // joueur 15 pv damage taken
+    public static final String joueurDmgHealth = "Asset/Pictures/PC/Human_SOULdmg.png";
     // joueur 10 pv
-    // joueur 10 pv damage taken
-    // joueur 5 pv
-    // joueur 5 pv damage taken
+    public static final String joueurHvDmgHealth = "Asset/Pictures/PC/Human_SOULHvDmg.png";
+    //joueur mort
     public static final String joueurDeath = "Asset/Pictures/PC/Death_SOUL.gif";
 
-    // Sprite attack
-    public static final String doggoSword = "Asset/Pictures/NPC/doggoSword.png";
 }
